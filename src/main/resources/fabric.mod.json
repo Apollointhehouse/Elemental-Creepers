@@ -1,16 +1,16 @@
 {
   "schemaVersion": 1,
-  "id": "examplemod",
+  "id": "elementalcreepers",
   "version": "${version}",
 
-  "name": "Example Mod",
+  "name": "Elemental Creepers",
   "description": "This mod aims to help new BTA modders.",
   "authors": [
-    "Turnip Labs"
+    "Apollointhehouse"
   ],
   "contact": {
-    "homepage": "",
-    "sources": ""
+    "homepage": "https://github.com/Apollointhehouse/Elemental-Creepers",
+    "sources": "https://github.com/Apollointhehouse/Elemental-Creepers"
   },
 
 	"icon": "icon.png",
@@ -19,20 +19,23 @@
   "environment": "*",
   "entrypoints": {
     "main": [
-			"turniplabs.examplemod.ExampleMod"
+			"apollointhehouse.elementalcreepers.ElementalCreepers"
     ],
 		"beforeGameStart": [
-			"turniplabs.examplemod.ExampleMod"
+			"apollointhehouse.elementalcreepers.ElementalCreepers"
 		],
 		"afterGameStart": [
-			"turniplabs.examplemod.ExampleMod"
+			"apollointhehouse.elementalcreepers.ElementalCreepers"
 		],
-		"recipesReady": [
-			"turniplabs.examplemod.ExampleMod"
+		"beforeClientStart": [
+			"apollointhehouse.elementalcreepers.ElementalCreepers"
+		],
+		"afterClientStart": [
+			"apollointhehouse.elementalcreepers.ElementalCreepers"
 		]
 	},
   "mixins": [
-      "examplemod.mixins.json"
+		"elementalcreepers.mixins.json"
   ],
 
   "depends": {
