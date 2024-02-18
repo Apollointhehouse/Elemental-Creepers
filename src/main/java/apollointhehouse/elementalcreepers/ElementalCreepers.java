@@ -10,7 +10,6 @@ import turniplabs.halplibe.helper.SoundHelper;
 import turniplabs.halplibe.util.ClientStartEntrypoint;
 import turniplabs.halplibe.util.GameStartEntrypoint;
 
-
 public class ElementalCreepers implements ModInitializer, GameStartEntrypoint, ClientStartEntrypoint {
     public static final String MOD_ID = "elementalcreepers";
     public static final Logger LOGGER = LoggerFactory.getLogger(MOD_ID);
@@ -24,6 +23,8 @@ public class ElementalCreepers implements ModInitializer, GameStartEntrypoint, C
 		Items.initializeItems();
 		Blocks.initializeBlocks();
 		Entities.initializeEntities();
+
+
 	}
 
 	@Override

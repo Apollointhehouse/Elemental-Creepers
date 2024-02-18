@@ -14,6 +14,8 @@ public class Config {
 			.addEntry("blockIDStart", 1679)
 			.addEntry("itemIDStart", 16742)
 			.addEntry("entityIDStart", 1679);
+		properties.addCategory("ElementalCreepers")
+			.addEntry("Radius", 3);
 
 		cfg = new TomlConfigHandler(MOD_ID, properties);
 	}
